@@ -14,25 +14,25 @@
 		<header class="container">
 			<h1>SERF</h1>
 			<ul class="nav">
-				<li>Sri Emas Resource FInder</li>
+				<li>Sri Emas Resource Finder</li>
 				<li><strong>FOR SRI EMAS STUDENTS AND TEACHERS</strong></li>
 			</ul>
 		</header>
 		<div id="filters" class="container">
 			<input id="toolSearch" type="search" placeholder="What can you provide?"></input>
 			<span class="clear sml-button">Clear</span>
-			<span class="formbutton sml-button">HIDE/SHOW REQUEST FIELD</span>
+            <span class="formbutton sml-button"><a href="https://docs.google.com/forms/d/11yX6I9UN92sHKlQz5EwW6lCXR-zk1jlUqfLxm9WvN-M/viewform" target="_blank">I NEED SOMETHING</a></span>
 		</div>
-<center><iframe class="formframe" src="https://docs.google.com/forms/d/11yX6I9UN92sHKlQz5EwW6lCXR-zk1jlUqfLxm9WvN-M/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
-        <div id="info" class="container"><h4>What people need:</h4></div>
+        <div id="info" class="container"><h4>What people need:</h4><small>Click to get more information.</small></div>
 		<div id="tools" class="container"><span class="flash animated">LOADING...</span></div>
-		<div id="info" class="container">
+<!--
+        <div id="info" class="container">
 				<div class="span1">
 					<h4>THE ENGINE</h4>
 					<p>The site is powered by a Google Spreadsheet for the data, Google Forms and sheetsee.js.<p>
 				</div>
 		</div>
-
+-->
 		<script id="tools" type="text/html">
 		{{#rows}}
 		<div id="{{rowNumber}}" class="tool-box {{#checkedout}}not-{{/checkedout}}available">
@@ -40,7 +40,7 @@
 			<div class="tool-box-bottom {{rowNumber}}">
 				<ul>
                     <li><strong>{{name}} from {{class}}</strong></li>
-                    <li><small>needs it before {{deadline}}</small></li>
+                    <li><small>needs it on {{deadline}}</small> (month/date)</li>
 					{{#details}}
                     <li><strong>{{details}}</strong></li>
 					{{/details}}
@@ -55,19 +55,6 @@
 	        var URL = "19e-fHGfvJ3yYMNCEtes8RIsWmoxY8BUi6cZKlNGnTcE"
 	        Tabletop.init( { key: URL, callback: drawToolBox, simpleSheet: true } )
 	      })
-          
-          function hideToggle(button, elem) {
-            $(button).toggle(
-              function () {
-                $(elem).hide();
-              },
-              function () {
-                $(elem).show();
-              }
-            );
-          } 
-          
-          hideToggle(".formbutton", ".formframe");
             
           function autoResize(id){
             //var newheight;

@@ -1,7 +1,7 @@
 body {font-family: "Source Sans Pro", Franklin Gothic Book, Helvetica, Arial, sans-serif; font-weight: lighter;
   border: 52px #A93338 solid; margin: 0px; padding: 20px 20px 200px 20px;}
 a {text-decoration: none; color: inherit; border-bottom: 1px dotted;}
-a:hover, .tool-box.available a:hover, .tool-box a:hover {color: #EBC72F; border-color: #EBC72F;}
+a:hover, .tool-box.available a:hover, .tool-box a:hover {color: #A93338; border-color: #fff;}
 small {font-weight: 700; font-size: 11px; letter-spacing: .08em;}
 h1 {font-size: 68px; color: #EBC72F; margin: 30px 0px 20px 0px;}
 h4, h5 {margin: 4px 0px; }
@@ -31,7 +31,6 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 19px 4px
 
 .sml-button {cursor: pointer;padding: 5px 7px; background-color: #EBC72F; font-weight: 700; font-size: 12px;
   text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #A93338;}
-.sml-button:hover {opacity: .75;}
 .button-pressed {background: #EBC72F;}
 
 /* #EBC72F blue
@@ -49,7 +48,6 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 19px 4px
 .tool-box:nth-child(1) {margin-top: 0;}
 .tool-box-tool { display: block; font-size: 26px; padding: 10px 0; text-align: center; width: 100%;
   cursor: pointer; font-weight: 700;}
-.tool-box:hover {opacity: .75;}
 .tool-box ul {list-style: none; margin: 20px 0px 0px 0px; padding: 0px;}
 .tool-box li {margin: 10px 0px;}
 
@@ -63,8 +61,6 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 19px 4px
   text-align: center; width: 100%; margin: 12px 0px; border: 1px solid #B6B6B6;}
 
 .tool-box-bottom {display: none; width: 100%;}
-
-.selected-tool {opacity: .75;}
 
 a.imglink {border: none;}
 
