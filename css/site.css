@@ -1,9 +1,9 @@
 body {font-family: "Source Sans Pro", Franklin Gothic Book, Helvetica, Arial, sans-serif; font-weight: lighter;
-  border: 52px #A93338 solid; margin: 0px; padding: 20px 20px 200px 20px;}
+  border: 52px #EBC72F solid; margin: 20px; padding: 20px 20px 20px 20px; background: #A93338;}
 a {text-decoration: none; color: inherit; border-bottom: 1px dotted;}
 a:hover, .tool-box.available a:hover, .tool-box a:hover {color: #A93338; border-color: #fff;}
 small {font-weight: 700; font-size: 11px; letter-spacing: .08em;}
-h1 {font-size: 68px; color: #EBC72F; margin: 30px 0px 20px 0px;}
+h1 {font-size: 68px; color: #fff; margin: 30px 0px 20px 0px;}
 h4, h5 {margin: 4px 0px; }
 h5 {font-weight: lighter; color: #EBC72F; text-transform: uppercase;}
 .container {max-width: 870px; margin: 0px auto; overflow: auto; padding: 20px 0px;}
@@ -27,7 +27,7 @@ ul.nav a:hover {color: #EBC72F; border-color: #EBC72F;}
 
 input:not([type=submit]):not([type=file]):not([type=checkbox]) {margin: 19px 4px; border: none;
   border-bottom: 1px solid #EBC72F; background-color: transparent; padding: 0px;
-  font-family: Source Sans Pro; color: #acacac; font-size: 13px; height: 22px;}
+  font-family: Source Sans Pro; color: #000; font-size: 13px; height: 22px;}
 
 .sml-button {cursor: pointer;padding: 5px 7px; background-color: #EBC72F; font-weight: 700; font-size: 12px;
   text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #A93338;}
